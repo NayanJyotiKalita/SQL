@@ -1,0 +1,16 @@
+Common mistake
+
+What is a common mistake to avoid in SQL query design?
+
+Choose the correct answer from below:
+
+1. Using aliases for table names
+
+2. Retrieving only necessary columns
+
+3. Using SELECT * to fetch all columns
+
+4. Using indexes on frequently queried columns
+
+Ans:
+Using SELECT * to fetch all columns
