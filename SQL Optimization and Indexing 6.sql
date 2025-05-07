@@ -1,0 +1,16 @@
+Index best suited for Full-text search
+
+Which index type is best suited for full-text search operations in MySQL?
+
+Choose the correct answer from below:
+  
+1. B-tree
+
+2. Hash
+
+3. Full-text
+
+4. GIN
+
+Ans:
+Full-text
