@@ -1,0 +1,16 @@
+Impact of adding too many indexes
+
+What is the impact of adding too many indexes on a database table?
+
+Choose the correct answer from below
+  
+1. Improves read and write performance equally
+
+2. Increases storage requirements and slows down write operations.
+
+3. Decreases storage requirements and speeds up write operations.
+
+4. Has no significant impact on performance.
+
+Ans:
+Increases storage requirements and slows down write operations.
