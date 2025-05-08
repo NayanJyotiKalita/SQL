@@ -1,0 +1,16 @@
+Optimizing a SELECT Statement
+
+When optimizing a SELECT statement, what is a recommended practice?
+
+Choose the correct answer from below:
+  
+1. Always use complex subqueries
+
+2. Retrieve all columns from a table.
+
+3. Use table aliases to simplify query readability.
+
+4.Join as many tables as possible in a single query.
+
+Ans:
+Use table aliases to simplify query readability.
