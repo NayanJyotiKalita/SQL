@@ -1,0 +1,16 @@
+Benefit of using a composite index
+
+What is the benefit of using a composite index?
+
+Choose the correct answer from below:
+  
+1. It reduces storage requirements for indexed data.
+
+2. It improves query performance for multi-column filtering.
+
+3. It automatically updates when data changes.
+
+4. It prevents data duplication in tables.
+
+Ans:
+It improves query performance for multi-column filtering
