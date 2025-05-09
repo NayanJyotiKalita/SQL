@@ -1,0 +1,16 @@
+Minimize the number of JOIN
+
+Which strategy can help minimize the number of JOIN operations in a query?
+
+Choose the correct answer from below:
+  
+1. Use SELECT * to simplify query design.
+
+2. Normalize all data to reduce redundancy.
+
+3. Use subqueries or Common Table Expressions (CTEs).
+
+4. Avoid using indexes to reduce complexity.
+
+Ans:
+Use subqueries or Common Table Expressions (CTEs)
