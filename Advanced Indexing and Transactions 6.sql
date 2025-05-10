@@ -1,0 +1,16 @@
+Disadvantage of many indexes on a table in MySQL
+
+Which of the following is a disadvantage of having too many indexes on a table in MySQL?
+
+Choose the correct answer from below:
+  
+1. Increased performance for all queries.
+
+2. Reduced storage requirements.
+
+3. Slower write performance due to index maintenance.
+
+4. Faster data retrieval speed.
+
+Ans:
+Slower write performance due to index maintenance.
