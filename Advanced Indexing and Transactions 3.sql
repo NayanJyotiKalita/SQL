@@ -1,0 +1,16 @@
+Isolation level in MySQL
+
+Which isolation level in MySQL prevents dirty reads but allows non-repeatable reads and phantom reads?
+
+Choose the correct answer from below:
+  
+1. Read Uncommitted
+
+2. Read Committed
+
+3. Repeatable Read
+
+4. Serializable
+
+Ans:
+Read Committed
