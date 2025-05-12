@@ -1,0 +1,16 @@
+Index type that involves filtering
+
+Which index type is best suited for queries that involve filtering based on a range of values in MySQL?
+
+Choose the correct answer from below:
+  
+1. Hash
+
+2. B-tree
+
+3. Full-text
+
+4. Spatial
+
+Ans:
+B-Tree
