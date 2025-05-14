@@ -1,0 +1,16 @@
+Primary purpose of High Availability (HA)
+
+What is the primary purpose of High Availability (HA) in database systems?
+
+Choose the correct answer from below:
+
+1. To increase the speed of query execution.
+
+2. To ensure that the database remains operational even during failures.
+
+3. To reduce the storage space used by the database.
+
+4. To enable faster data insertion.
+
+Ans:
+To ensure that the database remains operational even during failures.
