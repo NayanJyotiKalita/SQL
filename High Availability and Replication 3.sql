@@ -1,0 +1,16 @@
+Main advantage of Source-Replica Replication
+
+What is the main advantage of Source-Replica Replication in MySQL?
+
+Choose the correct answer from below:
+  
+1. It reduces the size of the database.
+
+2. It allows real-time replication of data to replica servers.
+
+3. It increases the speed of write operations.
+
+4. It enables compression of data across replicas.
+
+Ans:
+It allows real-time replication of data to replica servers.
