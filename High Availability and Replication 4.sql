@@ -1,0 +1,16 @@
+Replication method allows for multi-primary replication
+
+Which replication method allows for multi-primary replication in MySQL?
+
+Choose the correct answer from below:
+  
+1. Source-Replica Replication
+
+2. Group Replication
+
+3. Logical Replication
+
+4. Asynchronous Replication
+
+Ans:
+Group Replication
