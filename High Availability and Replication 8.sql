@@ -1,0 +1,16 @@
+Minimizing replication lag in MySQL
+
+Which of the following can help in minimizing replication lag in MySQL?
+
+Choose the correct answer from below:
+  
+1. Reducing the size of the binary logs.
+
+2. Increasing the sync_binlog parameter.
+
+3. Using multi-threaded replication.
+
+4. Reducing the number of tables in the database.
+
+Ans:
+Using multi-threaded replication.
