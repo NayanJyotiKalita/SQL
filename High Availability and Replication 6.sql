@@ -1,0 +1,16 @@
+Best suited for Asynchronous Replication
+
+Which scenario is best suited for Asynchronous Replication in MySQL?
+
+Choose the correct answer from below:
+
+1. When zero data loss is essential.
+
+2. When the application requires the fastest possible response times.
+
+3. When transactions must be committed on multiple servers simultaneously.
+
+4. When only specific tables need to be replicated.
+
+Ans:
+When the application requires the fastest possible response times.
