@@ -1,0 +1,46 @@
+Assignment : Automating MySQL Database Backups
+  
+Objective:
+Create a shell script to automate the backup of the MySQL database "test" and store it in a secure location with a timestamped filename.
+
+Instructions:
+Task: Create a Shell Script for Automated Backups
+
+Write a shell script that:
+Connects to the MySQL server and performs a backup of the specified database "test".
+Saves the backup file in the secure directory /home/user/secure/backup.
+Appends the current date (in ddmmyyyy format) to the backup filename to help identify the backup date.
+The backup file should be named using the format ${DB_NAME}_ddmmyyyy.sql, where DB_NAME is "test".
+
+SHELL:
+
+#!/bin/bash
+
+# Variables
+DB_NAME="test"  # Set your database name here
+BACKUP_DIR="/home/user/secure/backup"
+DATE=$(date +%d%m%Y)  # Get current date in ddmmyyyy format
+BACKUP_FILE="$DB_NAME"_"$DATE".sql
+MYSQL_USER="root"  # Replace with your MySQL user
+MYSQL_PASSWORD="user@123!"  # Replace with your MySQL password
+
+# Check if backup directory exists, if not, create it
+if [ ! -d "$BACKUP_DIR" ]; then
+    mkdir -p "$BACKUP_DIR"
+fi
+
+# Function to perform MySQL backup
+backup_database() {
+    echo "Starting backup of database $DB_NAME..."
+    mysqldump -u "$MYSQL_USER" -p"$MYSQL_PASSWORD" "$DB_NAME" > "$BACKUP_DIR/$BACKUP_FILE"
+    if [ $? -eq 0 ]; then
+        echo "Backup was successful."
+        chmod 600 "$BACKUP_DIR/$BACKUP_FILE"  # Secure the backup file
+    else
+        echo "Error during backup!"
+        exit 1
+    fi
+}
+
+# Call the backup function
+backup_database
