@@ -1,0 +1,14 @@
+What is the purpose of user management in MySQL?
+
+Choose the correct answer from below:
+  
+1. To reduce server load
+
+2. To optimize query performance
+
+3. To enhance database security by controlling access
+
+4. To automate routine tasks
+
+Ans:
+To enhance database security by controlling access
