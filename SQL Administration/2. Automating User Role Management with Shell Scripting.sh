@@ -23,3 +23,50 @@ Host (MYSQL_HOST):
 
 SHELL:
 
+#!/bin/bash
+
+# MySQL Credentials and Configuration
+MYSQL_USER="root"
+MYSQL_PASSWORD="user@123!"
+MYSQL_HOST="localhost"
+
+# User and Role Configuration
+USER_NAME="Alice"
+USER_PASSWORD="user@123!" # Define Alice's password here
+ROLE_NAME="data_entry"
+
+# MySQL command prefix
+MYSQL_CMD="mysql -h${MYSQL_HOST} -u${MYSQL_USER} -p${MYSQL_PASSWORD}"
+
+echo "Starting user and role management script..."
+
+# --- User Verification and Creation ---
+echo "Checking if user '${USER_NAME}' exists..."
+# Execute a query to check for the user. Note: Using -N -s -s to suppress headers and extra output.
+USER_EXISTS=$(${MYSQL_CMD} -N -s -e "SELECT EXISTS(SELECT 1 FROM mysql.user WHERE user = '${USER_NAME}');")
+
+if [ "$USER_EXISTS" = "0" ]; then
+    echo "User '${USER_NAME}' does not exist. Creating user..."
+    # Note: Using 'localhost' as the host for Alice. Change if needed.
+    ${MYSQL_CMD} -e "CREATE USER '${USER_NAME}'@'localhost' IDENTIFIED BY '${USER_PASSWORD}';"
+    echo "User '${USER_NAME}' created successfully."
+else
+    echo "User '${USER_NAME}' already exists."
+fi
+
+# --- Role Verification and Creation ---
+# Note: CREATE ROLE IF NOT EXISTS is available in MySQL 8.0+
+# For older versions, you might need a different check.
+echo "Checking/Creating role '${ROLE_NAME}'..."
+${MYSQL_CMD} -e "CREATE ROLE IF NOT EXISTS '${ROLE_NAME}';"
+echo "Role '${ROLE_NAME}' ensured to exist."
+
+# --- Role Assignment ---
+echo "Assigning role '${ROLE_NAME}' to user '${USER_NAME}'@'localhost'..."
+${MYSQL_CMD} -e "GRANT '${ROLE_NAME}' TO '${USER_NAME}'@'localhost';"
+
+# --- Refresh Privileges ---
+echo "Refreshing privileges..."
+${MYSQL_CMD} -e "FLUSH PRIVILEGES;"
+
+echo "Script finished."
