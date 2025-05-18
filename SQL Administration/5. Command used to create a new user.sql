@@ -1,0 +1,16 @@
+Command used to create a new user
+
+Which MySQL command is used to create a new user?
+
+Choose the correct answer from below:
+  
+1. CREATE NEW USER
+
+2. ADD USER
+
+3. CREATE USER
+
+4. INSERT USER
+
+Ans:
+CREATE USER
