@@ -1,1 +1,16 @@
+Purpose of the `mysqldump` utility
 
+What is the purpose of the mysqldump utility?
+
+Choose the correct answer from below:
+
+1. To start the MySQL server
+
+2. To create backups of the database
+
+3. To monitor database performance
+
+4. To manage user permissions
+
+Ans:
+To create backups of the database
