@@ -1,0 +1,16 @@
+Routine maintenance task in MySQL
+
+Which of the following is NOT a routine maintenance task in MySQL?
+  
+Choose the correct answer from below:
+
+1. Regular backups
+
+2. Index fragmentation checks
+
+3. Optimizing server configuration for queries
+
+4. Defragmenting disk drives
+
+Ans:
+Defragmenting disk drives
