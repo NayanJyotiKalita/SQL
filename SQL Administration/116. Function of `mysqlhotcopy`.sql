@@ -1,0 +1,16 @@
+Function of `mysqlhotcopy`
+
+What is the function of mysqlhotcopy?
+
+Choose the correct answer from below:
+
+1. To perform logical backups
+
+2. To perform hot backups of MyISAM tables
+
+3. To restore InnoDB tables
+
+4. To repair corrupted tables
+
+Ans:
+To perform hot backups of MyISAM tables
