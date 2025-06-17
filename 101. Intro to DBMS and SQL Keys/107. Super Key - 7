@@ -1,0 +1,19 @@
+# Super Key - 7
+
+Consider a **'Voters'** table with the following columns:
+Voter_ID, First_Name, Last_Name, Address, Voter_Registration_Number
+
+## Among the following sets, which is the **minimal super key** for the 'Voters' table?
+
+Choose the correct answer from below:
+
+- {Voter_ID}
+
+- {FirstName, LastName}
+
+- {VoterID, VoterRegistration_Number}
+
+- {Address, VoterRegistrationNumber}
+
+## Answer
+A
