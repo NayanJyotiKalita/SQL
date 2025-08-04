@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application...'
-                sh 'pwd'                                # sh pwd doesnot work, it has to be sh 'pwd
+                sh 'pwd'                                // sh pwd doesnot work, it has to be sh 'pwd
                 sh 'ls'
             }
         }
